@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 // import 'package:firstapp/listview.dart';
 // import 'package:firstapp/multiplication.dart';
 // import 'package:firstapp/secondmult.dart';
-import 'package:firstapp/simplecalculator.dart';
+/* import 'package:firstapp/simplecalculator.dart'; */
+import 'package:firstapp/greaternumber.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Simplecalcultor(),
+      home: Greaternumber(),
     );
   }
 }

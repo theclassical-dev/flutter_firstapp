@@ -20,6 +20,7 @@ class _SecondmultState extends State<Secondmult> {
 
   @override
   Widget build(BuildContext context) {
+    multuply();
     return Scaffold(
       appBar: AppBar(
         title: Text("Matrix Mul"),
