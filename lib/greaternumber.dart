@@ -69,6 +69,7 @@ class _GreaternumberState extends State<Greaternumber> {
 
                   a1.clear();
                   b1.clear();
+                  c1.clear();
                 },
               ),
             ),
