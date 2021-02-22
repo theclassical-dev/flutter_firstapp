@@ -56,15 +56,21 @@ class _OrderState extends State<Order> {
                   trailing: GestureDetector(
                     onTap: () {
                       String xc = a1.text;
-                      if (xc == "") {
-                        setState(() {
-                          a1.text = "${todo[index].toString().toUpperCase()}";
-                        });
+                      if (a1.text.contains(
+                          "${todo[index].toString().toUpperCase()}")) {
+                        a1.text = a1.text.replaceAll(
+                            "${todo[index].toString().toUpperCase()} ,", "");
                       } else {
-                        setState(() {
-                          a1.text =
-                              "$xc, ${todo[index].toString().toUpperCase()}";
-                        });
+                        if (xc == "") {
+                          setState(() {
+                            a1.text = "${todo[index].toString().toUpperCase()}";
+                          });
+                        } else {
+                          setState(() {
+                            a1.text =
+                                "$xc, ${todo[index].toString().toUpperCase()}";
+                          });
+                        }
                       }
                     },
                     child: Icon(Icons.add),
