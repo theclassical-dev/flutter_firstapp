@@ -6,7 +6,8 @@ import 'package:flutter/material.dart';
 // import 'package:firstapp/greaternumber.dart';
 // import 'package:firstapp/todolist.dart';
 // import 'package:firstapp/order.dart';
-import 'package:firstapp/gridview.dart';
+// import 'package:firstapp/gridview.dart';
+import 'package:firstapp/calculator.dart';
 
 void main() {
   runApp(MyApp());
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Gridview(),
+      home: Calculator(),
     );
   }
 }
