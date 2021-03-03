@@ -161,6 +161,7 @@ class _CalculatorState extends State<Calculator> {
                       text: '00',
                       fillColor: 0xFFFFFFFF,
                       textColor: 0xFF65BDAC,
+                      textSize: 20,
                     ),
                     CalButton(
                       text: '=',

@@ -1,3 +1,4 @@
+import 'package:firstapp/listview.dart';
 import 'package:flutter/material.dart';
 // import 'package:firstapp/listview.dart';
 // import 'package:firstapp/multiplication.dart';
@@ -7,10 +8,35 @@ import 'package:flutter/material.dart';
 // import 'package:firstapp/todolist.dart';
 // import 'package:firstapp/order.dart';
 // import 'package:firstapp/gridview.dart';
+import 'package:firstapp/profilepage.dart';
 import 'package:firstapp/calculator.dart';
 
 void main() {
   runApp(MyApp());
+}
+
+class NavDrawer extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Drawer(
+      child: ListView(
+        children: [
+          ListTile(
+            title: Text('a'),
+            leading: Text('Menu'),
+            subtitle: Text('b'),
+            trailing: Icon(Icons.ac_unit),
+          ),
+          ListTile(
+            title: Text('yef'),
+            leading: Text('Menu'),
+            subtitle: Text('yeff'),
+            trailing: Icon(Icons.ac_unit_sharp),
+          )
+        ],
+      ),
+    );
+  }
 }
 
 class MyApp extends StatelessWidget {
@@ -35,7 +61,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Calculator(),
+      home: Profilepage(),
     );
   }
 }
