@@ -1,3 +1,4 @@
+import 'package:firstapp/calculator.dart';
 import 'package:flutter/material.dart';
 
 class NavDrawer extends StatelessWidget {
@@ -6,17 +7,21 @@ class NavDrawer extends StatelessWidget {
     return Drawer(
       child: ListView(
         children: [
+          DrawerHeader(child: Text('Hello')),
           ListTile(
             title: Text('a'),
             leading: Text('Menu'),
-            subtitle: Text('b'),
-            trailing: Icon(Icons.ac_unit),
           ),
           ListTile(
-            title: Text('yef'),
-            leading: Text('Menu'),
-            subtitle: Text('yeff'),
-            trailing: Icon(Icons.ac_unit_sharp),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Calculator(),
+                ),
+              );
+            },
+            leading: Text('Calculator'),
           ),
         ],
       ),
