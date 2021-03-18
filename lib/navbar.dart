@@ -1,4 +1,5 @@
 import 'package:firstapp/calculator.dart';
+import 'package:firstapp/api.dart';
 import 'package:flutter/material.dart';
 
 class NavDrawer extends StatelessWidget {
@@ -22,6 +23,17 @@ class NavDrawer extends StatelessWidget {
               );
             },
             leading: Text('Calculator'),
+          ),
+          ListTile(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Api(),
+                ),
+              );
+            },
+            leading: Text('Api Testing'),
           ),
         ],
       ),
