@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import './widgets/CalButton.dart';
+import './widgets/calButton.dart';
 
 class Calculator extends StatefulWidget {
   const Calculator({Key key}) : super(key: key);
